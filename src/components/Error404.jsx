@@ -15,11 +15,11 @@ function Error404() {
         <br />
         exist.
       </div> */}
-      <div className="">
+      <div>
         <div className="text-center text-8xl text-gray-500 error1">404</div>
       </div>
       {"//"}
-      <div class="mt-4 text-6xl text-black-500 error2">
+      <div className="mt-4 text-6xl text-black-500 error2">
          {"//"} 404 {"//"} 
       </div>
       {"//"}

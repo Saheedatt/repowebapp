@@ -41,7 +41,7 @@ WAI-ARIA guideline, making my webapp more accessible.
 ![RepositoryDetails](/public/Screenshot.png)
 
 ## Live Link
-- https://saheedatgithubrepo.netlify.app/
+- https://saheedatrepo.netlify.app/
 
 ### Acknowledgments
 - Mr Setemi Ojo
