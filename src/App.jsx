@@ -41,15 +41,18 @@ function App() {
           <div className="main flex-1 p-10 overflow-y-auto">
             <Routes>
               <Route
+                exact
                 path="/"
                 element={<RespositoryList username={username} />}
               />
-              <Route path="/overview" element={<Overview />} />
+              <Route exact path="/overview" element={<Overview />} />
               <Route
+                exact
                 path="/repository/:repoId"
                 element={<RepositoryDetails />}
               />
               <Route
+                exact
                 path="/random"
                 element={
                   <ErrorBoundary>
@@ -57,8 +60,8 @@ function App() {
                   </ErrorBoundary>
                 }
               />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="*" element={<Error404 />} />
+              <Route exact path="/projects" element={<Projects />} />
+              <Route exact path="*" element={<Error404 />} />
             </Routes>
           </div>
         </div>
