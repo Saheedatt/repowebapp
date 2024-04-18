@@ -33,7 +33,6 @@ function App() {
   };
 
   return (
-    <Router>
       <div className="flex h-full">
         <Sidebar user={user} />
         <div className="container h-screen flex-1 flex flex-col shadow-lg">
@@ -66,7 +65,6 @@ function App() {
           </div>
         </div>
       </div>
-    </Router>
   );
 }
 
