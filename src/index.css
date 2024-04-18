@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-list {
+  list-style-type: decimal;
+}
+@media screen and (max-width: 767px) {
+  .sidebar{
+    display: none;
+  }
+  .error1{
+    font-size: 4rem;
+  }
+  .error2{
+    font-size: 2.25rem;
+  }
+  .heading{
+    font-size: 1.5rem;
+  }
+  .intro, .ol{
+    font-size: .9rem;
+    line-height: 1.5;
+  }
+  .features{
+    font-size: 1.2rem;
+  }
+  .header{
+    font-size: .8rem;
+    padding-inline: 8px;
+
+    & nav ul li{
+      padding-right: 5px;
+    }
+    & .icon{
+      display: none;
+    }
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sidebar {
+    width: 35%;
+    font-size: 1.3rem;
+  }
+  .name {
+    font-size: 1.1rem;
+  }
+  .user,
+  .bio {
+    font-size: 0.8rem;
+  }
+  .button{
+    font-size: 0.7rem;
+  }
+  .location{
+    font-size: 1rem;
+  }
+  .links{
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: underline;
+  }
+}
