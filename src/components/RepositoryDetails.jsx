@@ -77,7 +77,7 @@ function RepositoryDetails() {
           </div>
           <p className="mt-4">Language: {repo.language || "Not specified"}</p>
           <p className="mt-2">
-            Link: {""}
+            Link: 
             <a
               href={repo.html_url}
               target="_blank"

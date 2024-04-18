@@ -61,7 +61,7 @@ function App() {
                 }
               />
               <Route exact path="/projects" element={<Projects />} />
-              <Route exact path="*" element={<Error404 />} />
+              <Route path="*" element={<Error404 />} />
             </Routes>
           </div>
         </div>

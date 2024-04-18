@@ -11,7 +11,6 @@ import {
   FormLabel,
   Input,
 } from "@chakra-ui/react";
-import NewRepo from "./NewRepo";
 
 function CreateModal({ isOpen, onClose }) {
   const [repoName, setRepoName] = useState("");
