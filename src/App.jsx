@@ -33,38 +33,29 @@ function App() {
   };
 
   return (
-      <div className="flex h-full">
-        <Sidebar user={user} />
-        <div className="container h-screen flex-1 flex flex-col shadow-lg">
-          <Header />
-          <div className="main flex-1 p-10 overflow-y-auto">
-            <Routes>
-              <Route
-                exact
-                path="/"
-                element={<RespositoryList username={username} />}
-              />
-              <Route exact path="/overview" element={<Overview />} />
-              <Route
-                exact
-                path="/repository/:repoId"
-                element={<RepositoryDetails />}
-              />
-              <Route
-                exact
-                path="/random"
-                element={
-                  <ErrorBoundary>
-                    <Random />
-                  </ErrorBoundary>
-                }
-              />
-              <Route exact path="/projects" element={<Projects />} />
-              <Route path="*" element={<Error404 />} />
-            </Routes>
-          </div>
+    <div className="flex h-full">
+      <Sidebar user={user} />
+      <div className="container h-screen flex-1 flex flex-col shadow-lg">
+        <Header />
+        <div className="main flex-1 p-10 overflow-y-auto">
+          <Routes>
+            <Route path="/" element={<RespositoryList username={username} />} />
+            <Route path="/overview" element={<Overview />} />
+            <Route path="/repository/:repoId" element={<RepositoryDetails />} />
+            <Route
+              path="/random"
+              element={
+                <ErrorBoundary>
+                  <Random />
+                </ErrorBoundary>
+              }
+            />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
         </div>
       </div>
+    </div>
   );
 }
 
