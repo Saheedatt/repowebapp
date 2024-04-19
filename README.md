@@ -41,7 +41,7 @@ WAI-ARIA guideline, making my webapp more accessible.
 ![RepositoryDetails](/public/Screenshot.png)
 
 ## Live Link
-- https://saheedatrepo.netlify.app/
+- https://repowebapp.vercel.app/
 
 ### Acknowledgments
 - Mr Setemi Ojo
