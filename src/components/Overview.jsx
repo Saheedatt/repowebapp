@@ -3,7 +3,7 @@ import "../index.css";
 
 function Overview() {
   return (
-    <div className="p-4 font-monteserrat">
+    <div className="p-4 font-monteserrat overview">
       <h1 className="text-4xl font-bold mb-4 text-center heading">
         Github Repository Web App
       </h1>
@@ -13,7 +13,7 @@ function Overview() {
       </p>
       <span className="intro">
         The task was to create a web application that interacts with the GitHub
-        API to fetch and display a list of my repositories.We were given a list
+        API to fetch and display a list of my repositories. We were given a list
         of functionalities/features to implement using React.js. Styling is
         fully based on the creator's discretion.
       </span>
@@ -22,14 +22,14 @@ function Overview() {
       <ol className="p-4 custom-list ol">
         <li>
           <strong>404 Page</strong>- An Error(404) page was created for when
-          users try to navigate to undefined routes and when there are
-          navigation errors.
+          users try to navigate to undefined routes.
+          See: <a className="text-blue-500 underline" href="https://repowebapp.vercel.app/*">Error Page</a>
         </li>
         <li>
           <strong>Error Boundary</strong>- An error page shows when an error
           occurs within the defined boundary. The error boundary component
           catches errors in the application. See:
-          <span className="text-bold text-red-700"> Random.jsx.</span>
+          <span className="text-bold text-red-700"> Random.jsx. (<a className="text-blue-500 underline" href="https://repowebapp.vercel.app/random">ErrorBoundary Page</a>)</span>
         </li>
         <li>
           <strong>Repository Listing</strong>- Implemented a page that fetches
@@ -57,7 +57,7 @@ function Overview() {
         </li>
         <li>
           <strong>Layout and Design</strong>- Chakra UI and Tailwind CSS are used
-          to build the user interface. Chakra UI is build according to the
+          to build the user interface. Chakra UI is built according to the
           WAI-ARIA guideline, making my webapp more accessible.
         </li>
       </ol>

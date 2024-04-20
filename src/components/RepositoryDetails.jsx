@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fetchRepositories } from "../services/fetchGithubApi";
+import "../index.css";
+
 
 function RepositoryDetails() {
   const { repoId } = useParams();
@@ -59,30 +61,30 @@ function RepositoryDetails() {
         animate="animate"
       >
         <div className="w-full max-w-md bg-black text-white shadow-md rounded-lg p-6">
-          <p className="text-xl font-bold mb-2">Name: {repo.name}</p>
-          <p>Description: {repo.description} || 'No description available.'</p>
-          <div className="flex flex-row justify-between items-center mt-4 border-b border-gray-200 pb-2">
+          <p className="text-xl font-bold mb-2 capitalize pb-1">Name: {repo.name}</p>
+          <p className="details">Description: {repo.description} || 'No description available.'</p>
+          <div className="flex flex-row justify-between items-center mt-4 border-b border-gray-200 pb-2 details">
             <div>
               <p>Stars: {repo.stargazers_count}</p>
               <p>Forks: {repo.forks_count}</p>
             </div>
-            <div>
+            <div className="details">
               <p>Open issues: {repo.open_issues_count}</p>
               <p>Watchers: {repo.watchers_count}</p>
             </div>
           </div>
-          <div className="flex flex-row justify-between items-center mt-4">
+          <div className="flex flex-row justify-between items-center mt-4 details">
             <p>Created at: {formatDate(repo.created_at)}</p>
             <p>Updated at: {formatDate(repo.updated_at)}</p>
           </div>
-          <p className="mt-4">Language: {repo.language || "Not specified"}</p>
+          <p className="mt-4 text-blue details">Language: {repo.language || "Not known"}</p>
           <p className="mt-2">
             Link: 
             <a
               href={repo.html_url}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-300"
+              className="text-blue-300 details hover:text-blue-500"
             >
               Visit Repository
             </a>

@@ -17,8 +17,8 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="flex items-center justify-center h-full font-shadows text-2xl">
-          <h2>Something went wrong...</h2>
+        <div className="flex flex-col items-center justify-center h-full font-shadows text-2xl">
+          <h2 className="pb-3">Something went wrong...</h2>
           <p>Please try again later.</p>
         </div>
       );
