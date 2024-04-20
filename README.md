@@ -17,7 +17,7 @@ The task was to create a web application that interacts with the GitHub API to f
 - View Selected Repository Details: Nested routing is also used to display detailed information for selected repositories
 e.g Name, Description, Languages, Forks, Stars etc.
   
-- Layout and Design<- Chakra UI and Tailwind CSS are used to build the user interface. Chakra UI is build according to the
+- Layout and Design<- Chakra UI and Tailwind CSS are used to build the user interface. Chakra UI is built according to the
 WAI-ARIA guideline, making my webapp more accessible.
         
 ## Technologies used
